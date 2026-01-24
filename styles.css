@@ -160,19 +160,20 @@ footer {
   text-align:center;
 }
 
-#menu > article {
+.menu-container > article {
   transition: transform 0.3s ease;
 }
 
-#menu > article:hover {
+.menu-container > article:hover {
   transform: translateY(-5px);
 }
 
-#menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
 
+.menu-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 /* chefs section*/
@@ -180,10 +181,16 @@ footer {
   text-align: center;
 }
 
+
 #chefs {
+  text-align: center;
+}
+
+.chefs-container {
   display: flex;
   gap: 2rem;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 #chefs article {
@@ -196,7 +203,8 @@ footer {
   text-align: center;
 }
 
-#testimonials {
+
+.testimonials-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -218,4 +226,90 @@ article {
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+
+}
+
+@media(max-width: 1024px){
+  .menu-container , .testimonials-container, .chefs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 768px){
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: var(--secondary-color);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 1.2rem;
+    z-index: 1001;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background: var(--primary-color);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 6px;
+    gap: 1rem;
+  }
+
+  nav ul.showing {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+
+/* sections*/
+#menu {
+  grid-template-columns: 1fr;
+}
+
+#chefs .chefs-container {
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+section {
+  padding: 3rem 1.5rem;
+}
+
+
+/* SMALLE MOBILE */
+@media(max-width: 480px){
+  nav {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  #home {
+    padding: 4rem 1.5rem;
+  }
+
+  #home h2 {
+    font-size: 1.5rem;
+  }
 }

@@ -18,12 +18,7 @@
       <nav>
         <h1 class="logo">Royal Taste</h1>
 
-        <button class="menu-toggle">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="menu">
-            <path fill="none" d="M0 0h24v24H0V0z"></path>
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-          </svg>
-        </button>
+        <button class="menu-toggle">☰</button>
 
         <ul>
           <li class="nav-link"><a href="#home">Home</a></li>
@@ -56,63 +51,66 @@
     <!-- Menu Section -->
     <section id="menu">
       <h2>Our Menu</h2>
+      <div class="menu-container">
+        <article>
+          <h3>Grilled Chicken</h3>
+          <p>Succulent grilled chicken served with seasonal vegetables and a choice of sauce.</p>
+          <span class="price">$18.99</span>
+        </article>
 
-      <article>
-        <h3>Grilled Chicken</h3>
-        <p>Succulent grilled chicken served with seasonal vegetables and a choice of sauce.</p>
-        <span class="price">$18.99</span>
-      </article>
+        <article>
+          <h3>Beef Steak</h3>
+          <p>Perfectly seasoned beef steak served with roasted potatoes and a side salad.</p>
+          <span class="price">$24.99</span>
+        </article>
 
-      <article>
-        <h3>Beef Steak</h3>
-        <p>Perfectly seasoned beef steak served with roasted potatoes and a side salad.</p>
-        <span class="price">$24.99</span>
-      </article>
-
-      <article>
-        <h3>Vegetarian Pasta</h3>
-        <p>Delicious pasta tossed with fresh vegetables and a light tomato sauce.</p>
-        <span class="price">$15.99</span>
-      </article>
+        <article>
+          <h3>Vegetarian Pasta</h3>
+          <p>Delicious pasta tossed with fresh vegetables and a light tomato sauce.</p>
+          <span class="price">$15.99</span>
+        </article>
+      </div>
     </section>
         <!--Chefs section -->
         <section id="chefs">
       <h2>Meet Our Chefs</h2>
-      <article>
-        <h3>Chef John Doe</h3>
-        <p>Head Chef with over 20 years of experience in gourmet cuisine.</p>
-      </article>
+      <div class="chefs-container">
+        <article>
+          <h3>Chef John Doe</h3>
+          <p>Head Chef with over 20 years of experience in gourmet cuisine.</p>
+        </article>
 
-      <article>
-        <h3>Chef Jane Smith</h3>
-        <p>Pastry Chef known for creating exquisite desserts and baked goods.</p>
-      </article>
+        <article>
+          <h3>Chef Jane Smith</h3>
+          <p>Pastry Chef known for creating exquisite desserts and baked goods.</p>
+        </article>
 
-      <article>
-        <h3>Chef Mike Brown</h3>
-        <p>Sous Chef specializing in modern fusion dishes.</p>
-      </article>
-
+        <article>
+          <h3>Chef Mike Brown</h3>
+          <p>Sous Chef specializing in modern fusion dishes.</p>
+        </article>
+      </div>
     </section>
 
     <!-- Testimonials Section -->
      <section id="testimonials">
       <h2>What Our Customers Say</h2>
-      <article>
-        <p>"The food was absolutely amazing! The flavors were rich and the presentation was beautiful."</p>
-        <span>- Sarah L.</span>
-      </article>
+      <div class="testimonials-container">
+        <article>
+          <p>"The food was absolutely amazing! The flavors were rich and the presentation was beautiful."</p>
+          <span>- Sarah L.</span>
+        </article>
 
-      <article>
-        <p>"A wonderful dining experience with exceptional service. Highly recommend Royal Taste!"</p>
-        <span>- Mark T.</span>
-      </article>
+        <article>
+          <p>"A wonderful dining experience with exceptional service. Highly recommend Royal Taste!"</p>
+          <span>- Mark T.</span>
+        </article>
 
-      <article>
-        <p>"The best restaurant in town! The chefs truly know how to create magic in the kitchen."</p>
-        <span>- Emily R.</span>
-      </article>
-
+        <article>
+          <p>"The best restaurant in town! The chefs truly know how to create magic in the kitchen."</p>
+          <span>- Emily R.</span>
+        </article>
+      </div>
      </section>
 
     <!-- Contact Section -->
@@ -139,11 +137,11 @@
       <p>&copy; 2026 Royal Taste Restaurant. All rights reserved.</p>
 
       <script>
-        const menuToggle = document.querySelector('.menu-toggle');
+        const menuToggle = document.querySelector(".menu-toggle");
         const navLinks = document.querySelector("nav ul");
 
         menuToggle.addEventListener("click", () => {
-          navLinks.classList.toggle("show");
+          navLinks.classList.toggle("showing");
         });
       </script>
   </body>

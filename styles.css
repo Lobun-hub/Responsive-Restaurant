@@ -77,7 +77,7 @@ nav ul li a:hover{
 #home {
   text-align: center;
   padding: 6rem 2rem;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/hero.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/23\ Restaurant\ Interior\ Design\ Ideas\ for\ a\ Stunning….jpeg") center/cover no-repeat;
   color: white;
 }
 
@@ -153,4 +153,69 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem 2rem;
+}
+
+/* MENU GRID STYLES */
+#menu {
+  text-align:center;
+}
+
+#menu > article {
+  transition: transform 0.3s ease;
+}
+
+#menu > article:hover {
+  transform: translateY(-5px);
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+}
+
+/* chefs section*/
+#chefs {
+  text-align: center;
+}
+
+#chefs {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#chefs article {
+  max-width: 300px;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+  text-align: center;
+}
+
+#testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#testimonials article {
+  background: var(--light-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+#contact {
+  text-align: center;
+}
+
+article {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.8);
 }

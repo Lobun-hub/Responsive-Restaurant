@@ -16,5 +16,9 @@ A fully responsive restaurant website built using HTML5 and CSS3.
 ## Project Purpose
 This project was built to practice front-end web development fundamentals and responsive design.
 
+## Live Demo
+https://lobun-hub.github.io/Responsive-Restaurant/
+
+
 ## Author
 Francis
